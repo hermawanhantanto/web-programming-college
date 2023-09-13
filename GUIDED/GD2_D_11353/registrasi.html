@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>210711353 - Hermawan Hantanto</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <ul class="menu">
+      <li><a href="registrasi.html">Register</a></li>
+      <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+    <h1>Formulir Registrasi Data Mahasiswa</h1>
+    <form onsubmit="return validateForm()">
+      <table cellspacing="4" cellpadding="4">
+        <tr>
+          <td><strong>Nama Mahasiswa</strong></td>
+          <td>
+            <input
+              type="text"
+              id="namamhs"
+              name="namamhs"
+              size="30"
+              placeholder="Nama"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Jenis Kelamin</strong></td>
+          <td>
+            <input type="radio" id="laki" name="jk" value="Laki-laki" />
+            <label for="laki">Laki-Laki</label>
+            <input type="radio" id="perempuan" name="jk" value="Perempuan" />
+            <label for="perempuan">Perempuan</label>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Program Studi</strong></td>
+          <td>
+            <select title="prodi" name="prodi" id="prodi">
+              <option value="">Pilih Prodi</option>
+              <option value="Teknik Informatika">Teknik Informatika</option>
+              <option value="Teknik Industri">Teknik Industri</option>
+              <option value="Sistem Informasi">Sistem Informasi</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Nomor Telpon</strong></td>
+          <td>
+            <input
+              type="number"
+              id="telepon"
+              name="telepon"
+              size="30"
+              placeholder="No Telepon"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Tanggal Lahir</strong></td>
+          <td>
+            <input
+              type="date"
+              id="nomhs"
+              name="nomhs"
+              size="30"
+              placeholder="Tanggal Lahir"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Email</strong></td>
+          <td>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              size="30"
+              placeholder="Email"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Password</strong></td>
+          <td>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              size="30"
+              placeholder="Password"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td align="top">
+            <p><strong>Hal Favorit</strong></p>
+          </td>
+          <td>
+            <fieldset>
+              <legend><strong>Game</strong></legend>
+              <input
+                type="checkbox"
+                id="pubgMobile"
+                name="game"
+                value="PUBG Mobile"
+                placeholder="PUBG Mobile"
+              />
+              <label for="pubgMobile">PUBG Mobile</label>
+              <input
+                type="checkbox"
+                id="mobileLegend"
+                name="game"
+                value="Mobile Legend"
+                placeholder="Mobile Legend"
+              />
+              <label for="mobileLegend">Mobile Legend</label>
+            </fieldset>
+            <fieldset>
+              <legend><strong>Film</strong></legend>
+              <input
+                type="checkbox"
+                id="drama"
+                name="film"
+                value="Drama"
+                placeholder="Drama"
+              />
+              <label for="drama">Drama</label>
+              <br />
+              <legend><strong>Film</strong></legend>
+              <input
+                type="checkbox"
+                id="action"
+                name="film"
+                value="ction"
+                placeholder="Action"
+              />
+              <label for="action">Action</label>
+              <br />
+              <legend><strong>Film</strong></legend>
+              <input
+                type="checkbox"
+                id="romance"
+                name="film"
+                value="Romance"
+                placeholder="Romance"
+              />
+              <label for="romance">Romance</label>
+            </fieldset>
+          </td>
+        </tr>
+        <tr align="top"">
+            <td><strong>Deskripsi</strong></td>
+            <td><textarea name="deskripsi" id="deskripsi" cols="34" rows="10" placeholder="Deskripsi"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" id="simpan" name="simpan"/></td>
+        </tr>
+      </table>
+    </form>
+    <script>
+        const validateForm = () => alert("Data Berhasil Disimpan!")
+    </script>
+  </body>
+</html>
